@@ -1,0 +1,11 @@
+body { background: #111; color: white; font-family: sans-serif; margin: 0; }
+nav { display: flex; justify-content: space-between; padding: 20px; background: #222; border-bottom: 2px solid #ff0055; }
+.kosik-tlacitko { cursor: pointer; background: #ff0055; padding: 10px; border-radius: 5px; }
+
+.produkty { display: flex; gap: 20px; padding: 40px; justify-content: center; }
+.karta { background: #1a1a1a; padding: 20px; border-radius: 15px; text-align: center; width: 250px; }
+.karta img { width: 100%; border-radius: 10px; margin-bottom: 15px; }
+
+#strana-kosik { padding: 40px; max-width: 600px; margin: 0 auto; }
+.polozka-v-kosiku { display: flex; justify-content: space-between; border-bottom: 1px solid #333; padding: 10px 0; }
+button { cursor: pointer; padding: 10px; border: none; border-radius: 5px; font-weight: bold; }
