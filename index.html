@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Hokej Shop Elite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo" onclick="ukazStranu('obchod')">HOKEJ-SHOP</div>
+        <div class="kosik-tlacitko" onclick="ukazStranu('kosik')">
+            🛒 Košík (<span id="pocet-v-kosiku">0</span>)
+        </div>
+    </nav>
+
+    <section id="strana-obchod">
+        <div class="produkty">
+            <div class="karta">
+                <img src="bauer.jpg" alt="Bauer">
+                <h3>Bauer Vapor Hyperlite 2</h3>
+                <p>8 490 Kč</p>
+                <button onclick="pridatDoKosiku('Bauer Hyperlite 2', 8490)">Do košíku</button>
+            </div>
+            <div class="karta">
+                <img src="ccm.jpg" alt="CCM">
+                <h3>CCM Trigger 8 Pro</h3>
+                <p>8 290 Kč</p>
+                <button onclick="pridatDoKosiku('CCM Trigger 8 Pro', 8290)">Do košíku</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="strana-kosik" style="display:none;">
+        <h2>Váš nákupní seznam</h2>
+        <div id="seznam-polozek"></div>
+        <div class="celkem">Celkem: <span id="celkova-cena">0</span> Kč</div>
+        <button class="platba" onclick="alert('Objednávka přijata!')">ZAPLATIT</button>
+        <button onclick="ukazStranu('obchod')">Zpět k výběru</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
